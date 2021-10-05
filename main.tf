@@ -1,3 +1,23 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
+    random = {
+      source = "hashicorp/random"
+    }
+  }
+
+  backend "remote" {
+#-   organization = "REPLACE_ME"
+   organization = "networknuts"
+
+    workspaces {
+      name = "terraform-test"
+    }
+  }
+}
+
 provider "aws" {
 #  access_key = "your aws access key here"
 #  secret_key = "your aws secret key here"
