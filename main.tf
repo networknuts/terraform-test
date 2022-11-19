@@ -19,8 +19,8 @@ terraform {
 }
 
 provider "aws" {
-#  access_key = "your aws access key here"
-#  secret_key = "your aws secret key here"
+  access_key = "AKIAZYXYJ57VVJVCY554"
+  secret_key = "CTRv0fTyb6PGWdvBrpUkNDcRvld7hBOx6eJj2BD/"
   region     = "ap-south-1"
 }
 
